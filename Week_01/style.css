@@ -1,0 +1,84 @@
+body {
+    padding:30px;
+    background-color:aliceblue;
+    font-family: "Gruppo", sans-serif;
+}
+
+.project_heading {
+    color:dimgrey;
+    font-size: 50px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes move{
+    0%{
+        transform:translateY(30px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.project_section {
+    color:dimgrey;
+    width:100%;
+    margin: 20px 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_desc {
+    width:49%;
+    display:inline-block;
+    font-size: 20px;
+    min-width:200px;
+    max-width:300px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_video {
+    width:50%;
+    min-width:280px;
+    max-width:300px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_image {
+    width:32%;
+    border-radius: 20px;
+    margin: 2px;
+    min-width:100px;
+    max-width:200px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.project_link {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 452px){
+    .project_image {
+        width: 360px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+}
+
