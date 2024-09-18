@@ -1,0 +1,54 @@
+body{
+    background-color:beige;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project_heading{
+    font-size: 50px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_disc{
+    font-size: 20px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_button{
+    font-size: 16px;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.project_image{
+    max-width: 68%;
+    height: auto;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes move{
+    0%{
+        transform:translateY(30px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
