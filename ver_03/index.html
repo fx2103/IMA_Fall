@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Add the background music here -->
-    <audio id="bgm" src="BGM.mp3" loop></audio>
+    <audio id="bgm" src="BGM.mp3" loop autoplay muted></audio>
 
     <header>
         <h1 id="family-title">🐾 Welcome to the Dog Age Calculator! 🐾</h1>
@@ -55,10 +55,12 @@
     <script src="app.js"></script>
 
     <script>
-        // JavaScript to play background music automatically when the webpage loads
+        // JavaScript to play background music automatically and unmute after page load
         window.addEventListener('load', function() {
             var audio = document.getElementById('bgm');
-            audio.play().catch(function(error) {
+            audio.play().then(() => {
+                audio.muted = false; // Unmute the audio after it starts playing
+            }).catch(function(error) {
                 console.log('Autoplay failed: ' + error);
             });
         });
